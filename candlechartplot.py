@@ -5,7 +5,7 @@ import pandas as pd
 
 def plot_candle_chart(path_to_csv: str, date_format="%Y-%m-%d") -> None:
     """
-    Simple function to plot a candle chart.
+    Simple function to plot a candle chart plot.
     This assumes that the files header has 4 columns:
 
     - Date: The date in the specified format
