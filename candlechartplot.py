@@ -42,7 +42,7 @@ def plot_candle_chart(path_to_csv: str, date_format="%Y-%m-%d") -> None:
         ax.add_patch(rect((row["line_x"], row["line_y"]), width=row["line_width"], height=row["diff_high_low"],
                           color=row["color"]))
 
-    plt.xlim(0, df.shape[0])
+    plt.xlim(-1, df.shape[0])
     plt.ylim(df["Low"].min(), df["High"].max())
 
     # Set the sticks
