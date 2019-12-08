@@ -46,7 +46,8 @@ def plot_candle_chart(path_to_csv: str, date_format="%Y-%m-%d") -> None:
 
     plt.xlim(0, df.shape[0])
     plt.ylim(df["Low"].min(), df["High"].max())
+
+    # Set the sticks
+    plt.xticks(df["index"], df.index.date, rotation=90)
+
     plt.show()
-
-    pass
-
